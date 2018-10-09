@@ -4,9 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.widget.TextView;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,13 +17,13 @@ public class SecondActivity extends AppCompatActivity {
         TextView vAlamat = (TextView)findViewById(R.id.valamat);
         TextView vTelp = (TextView)findViewById(R.id.vtelp);
 
-        if (getIntent().getExtras()!=null){
-            Intent data = getIntent();
-            vNama.setText(data.getStringExtra("nama"));
-            vNim.setText(data.getStringExtra("nim"));
-            vAlamat.setText(data.getStringExtra("alamat"));
-            vTelp.setText(data.getStringExtra("telp"));
-        }
+
+        Intent data = getIntent();
+        vNama.setText(data.getStringExtra("nama"));
+        vNim.setText(data.getStringExtra("nim"));
+        vAlamat.setText(data.getStringExtra("alamat"));
+        vTelp.setText(data.getStringExtra("telp"));
+
     }
 
 }

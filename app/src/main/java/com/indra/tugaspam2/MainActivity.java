@@ -20,14 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Bundle dataWarper = new Bundle();
-                dataWarper.putString("nama", msgNama.getText().toString());
-                dataWarper.putString("nim", msgNim.getText().toString());
-                dataWarper.putString("alamat", msgAlamat.getText().toString());
-                dataWarper.putString("telp", msgNoTelp.getText().toString());
-
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                intent.putExtras(dataWarper);
+                intent.putExtra("nama", msgNama.getText().toString());
+                intent.putExtra("nim", msgNim.getText().toString());
+                intent.putExtra("alamat", msgAlamat.getText().toString());
+                intent.putExtra("telp", msgNoTelp.getText().toString());
                 startActivity(intent);
             }
         });
