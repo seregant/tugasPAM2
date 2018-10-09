@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Identitas Mahasiswa</string>
+    <string name="title_activity_second_activity">second_activity</string>
+    <string name="title_activity_second_layout">second_layout</string>
+    <string name="your_message">Enter the message</string>
+    <string name="button_text">Send</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>
