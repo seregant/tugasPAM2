@@ -35,9 +35,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
 
                 <TextView
+                    android:layout_margin="15dp"
                     android:id="@+id/vnama"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -45,6 +50,7 @@
                     android:visibility="visible" />
 
                 <TextView
+                    android:layout_margin="15dp"
                     android:id="@+id/vnim"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -52,6 +58,7 @@
                     android:visibility="visible" />
 
                 <TextView
+                    android:layout_margin="15dp"
                     android:id="@+id/valamat"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -59,6 +66,7 @@
                     android:visibility="visible" />
 
                 <TextView
+                    android:layout_margin="15dp"
                     android:id="@+id/vtelp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
