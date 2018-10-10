@@ -26,5 +26,6 @@
                 android:value="com.indra.tugaspam2.MainActivity" />
         </activity>
     </application>
-
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
 </manifest>
